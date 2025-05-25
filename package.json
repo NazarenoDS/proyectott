@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testget": "node index.js GET",
+    "testgetid": "node index.js GET 1",
+    "testpost": "node index.js POST pruebaTerminal 1 prueba",
+    "testdelete": "node index.js Delete 1"
   },
   "keywords": [],
   "author": "",
