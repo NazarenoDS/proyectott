@@ -3,7 +3,7 @@
 --Descripcion: Proyecto realizado para la preentrega de talento tech, en base a los requerimientos dados en el pdf.-
 url(ahora no lo pongo porque no lo tengo y no funciona la web)..--
 
-# Clona el repocitorio, o copialo, es un monolito
+# Clona el repositorio, o copialo, es un monolito
 git clone https://github.com/nazarenods/proyectott
 
 # Instala las dependencias, aunque es full javascript.
