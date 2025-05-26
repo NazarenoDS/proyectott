@@ -18,8 +18,8 @@ npm testgetid
 npm testpost
 npm testdelete
 
-Bienvenido
-Debe ingresar como argumento GET / POST / DELETE
+Bienvenido\n
+Debe ingresar como argumento GET / POST / DELETE\n
 GET solo o con id de producto
 Post con informacion de producto a crear
 Delete con id de producto a borrar
