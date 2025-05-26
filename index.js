@@ -2,8 +2,11 @@
 const [,,arg1,arg2, arg3, arg4, arg5, ...args] = process.argv;
 const url = 'https://fakestoreapi.com/products'
 
+//if utilizado para devolver por else, si no sabe utilizar el programa.
 if(arg1 !== undefined){
+    //toUpperCase para salvaguardar si no se pone en mayuscula
     const method = arg1.toUpperCase();
+    //variable utilizada para completar la url base
     const urlComplete = ()=>{
         if(arg3!==undefined){
             return (`${url}`);
@@ -13,7 +16,7 @@ if(arg1 !== undefined){
             return (`${url}`);
         };
     }  
-
+    //variable para tener un method reutilizable
     const option = ()=>{
         const options = {
             method,
@@ -28,13 +31,14 @@ if(arg1 !== undefined){
         };
         return options;
     };
-
+    //fetch unico con variables reutilizables
     const connect =()=>{fetch(urlComplete(), option())
         .then(res=>res.json())
         .then(data=>console.log(data))
         .catch(err=>console.log("Error: " + err + err.stack));
     };
-
+    //Acciones del programa
+    //se utiliza setTimeout para dar fin a la accion luego de la accion, en un futuro cambiar por async await. 
     switch (arg1.toUpperCase()) {
         case 'GET':
             if(arg2){
